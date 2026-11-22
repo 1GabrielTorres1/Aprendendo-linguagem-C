@@ -1,21 +1,20 @@
-#include <stdio.h> // Dobro, triplo e metade - Leia um número e mostre seu dobro, triplo e metade.
+#include <stdio.h> // Antecessor e sucessor - Leia um número inteiro e exiba seu antecessor e seu sucessor.
 #include <stdlib.h>
 #include <locale.h>
 
 int main(){
 
-    float numero;
+    int numero;
     setlocale (LC_ALL, "Portuguese");
     system ("color 74");
 
     printf("Digite um numero:");
-    scanf("%g",&numero);
+    scanf("%i",&numero);
 
-    printf("\n\nO dobro do número %g é: %g\n\n", numero, numero*2);
-    printf("\n\nO triplo do número %g é: %g\n\n", numero, numero*3);
-    printf("\n\nA metade do número %g é: %g\n\n", numero, numero/2);
+    printf("\n\nO antecessor do número %i é: %i\n\n", numero, numero-1);
+    printf("O sucessor do número %i é: %i\n\n\n\n", numero, numero+1);
 
-    system ("pause");
+    system("pause");
 
     return 0;
 }
